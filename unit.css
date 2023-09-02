@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrix Reduction Tool</title>
+    <link rel="stylesheet" href="unit.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Matrix Reduction Tool</h1>
+        <p>Enter a 4x4 matrix (integer values only):</p>
+        <table>
+            <tr>
+                <td><input type="text" id="matrix00"></td>
+                <td><input type="text" id="matrix01"></td>
+                <td><input type="text" id="matrix02"></td>
+                <td><input type="text" id="matrix03"></td>
+            </tr>
+            <tr>
+                <td><input type="text" id="matrix10"></td>
+                <td><input type="text" id="matrix11"></td>
+                <td><input type="text" id="matrix12"></td>
+                <td><input type="text" id="matrix13"></td>
+            </tr>
+            <tr>
+                <td><input type="text" id="matrix20"></td>
+                <td><input type="text" id="matrix21"></td>
+                <td><input type="text" id="matrix22"></td>
+                <td><input type="text" id="matrix23"></td>
+            </tr>
+            <tr>
+                <td><input type="text" id="matrix30"></td>
+                <td><input type="text" id="matrix31"></td>
+                <td><input type="text" id="matrix32"></td>
+                <td><input type="text" id="matrix33"></td>
+            </tr>
+        </table>
+        <button onclick="reduceMatrix()">Reduce</button>
+        <h2>Row-Echelon Form:</h2>
+        <div id="result"></div>
+        <div id="steps"></div>
+    </div>
+    <script src="unit.js"></script>
+</body>
+</html>
